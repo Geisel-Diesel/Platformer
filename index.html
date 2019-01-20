@@ -62,6 +62,11 @@ function update()
 		}
 	
 	}
+	
+	if(py>600)
+	{
+		location.reload();
+	}
 	cxt.fillStyle = "red";
 	cxt.fillRect(0,0,canv.width,canv.height);
 	cxt.fillStyle = "green";
