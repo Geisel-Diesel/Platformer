@@ -45,6 +45,13 @@ window.onload = function()
 
 function update()
 {
+	var imageObj = new Image();
+	imageObj.src = "background.png";
+	cxt.drawImage(imageObj, 0,0,canv.width,canv.height);
+	var img = new Image();
+	img.src = "Luigi.png";
+	cxt.drawImage(img,15,20,20,20,px-5,py-20,10,20);
+	
 	if(holdLeft)
 	{
 		xv=-3;
@@ -80,10 +87,7 @@ function update()
 	{
 		location.reload();
 	}
-	cxt.fillStyle = "red";
-	cxt.fillRect(0,0,canv.width,canv.height);
-	cxt.fillStyle = "green";
-	cxt.fillRect(px-5,py-20,10,20);
+	
 	for(i = 0; i < 50; i++)
 	{
 		cxt.fillStyle = "blue";
